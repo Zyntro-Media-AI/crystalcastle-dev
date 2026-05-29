@@ -330,8 +330,12 @@ if missing: sys.exit(f"Missing env: {missing}")
 
 
 ---
-
-ถ้าคุณอยาก ผมสามารถ “convert repo นี้ให้เป็น startup-grade open-source SaaS presentation” ได้เลยครับ
-
-
-รับ Microsoft OneNote: https://aka.ms/GetOneNoteMobile
+💬 การส่งคำแนะนำ (Feedback Guide)
+เน้นไปที่การ "รับฟัง" ปัญหาหรือไอเดียจากผู้ใช้งาน
+💬 Feedback & Suggestions
+ความเห็นของคุณสำคัญมาก! หากคุณมีข้อสงสัยหรือข้อเสนอแนะ สามารถบอกเราได้ผ่านช่องทางเหล่านี้:
+รายงานปัญหา (Bug Report): หากสคริปต์รันไม่ผ่าน หรือลิงก์ Affiliate ทำงานผิดปกติ กรุณาเปิด [GitHub Issues] พร้อมแนบภาพหรือ Log ที่เกิดปัญหา
+เสนอไอเดีย (Feature Request): อยากให้เราทำระบบ Automation อะไรเพิ่ม? หรืออยากได้สรุปแฟชั่นสไตล์ไหน? พิมพ์ทิ้งไว้ได้ใน Issues หรือพูดคุยผ่าน Line Notify / X (Twitter) ของเรา
+Quick Feedback: สำหรับเรื่องด่วนหรือการพูดคุยทั่วไป สามารถ DM มาได้ที่ [ระบุ Link X หรือ Threads ของคุณ]
+เราจะพยายามตอบกลับและนำคำแนะนำไปปรับปรุงภายใน 24-48 ชั่วโมงครับ
+"By contributing to this project, you agree to the Developer Certificate of Origin (DCO)"
