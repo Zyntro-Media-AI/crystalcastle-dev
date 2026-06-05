@@ -8,13 +8,7 @@ Built for modern creators and affiliate marketers across:
 
 TikTok · Shopee · Reels · Threads · X
 
-""CI" (https://github.com/1napz/crystalcastle/actions/workflows/ci.yml/badge.svg)" (https://github.com/1napz/crystalcastle/actions)
-""AI Pipeline" (https://github.com/1napz/crystalcastle/actions/workflows/ai_pipeline.yml/badge.svg)" (https://github.com/1napz/crystalcastle/actions)
-""License: MIT" (https://img.shields.io/badge/license-MIT-black.svg)" (LICENSE)
-""Python" (https://img.shields.io/badge/python-3.11+-blue.svg)" (https://python.org)
-""Supabase" (https://img.shields.io/badge/state-Supabase-3ECF8E?logo=supabase&logoColor=white)" (https://supabase.com)
 
----
 
 🎯 What is Crystal Castle?
 
@@ -50,21 +44,43 @@ Monitoring & Alerts
 
 Performance Tracking
 
----
-
 ⚡ Core Capabilities
 
-Module| Description
-🎬 AI Video Engine| Generate short-form product videos
-✍️ Caption Generator| Create platform-optimized captions
-🔗 Affiliate Monitoring| Validate affiliate links automatically
-📊 State Tracking| Store pipeline state in Supabase
-🚨 Alert System| Notify failures and link issues
-🚀 CI/CD Automation| GitHub Actions orchestration
-🌐 Landing Hub| GitHub Pages / Vercel deployment
-📚 Knowledge Base| AI documentation and workflow guidance
+Module
 
----
+Description
+
+🎬 AI Video Engine
+
+Generate short-form product videos
+
+✍️ Caption Generator
+
+Create platform-optimized captions
+
+🔗 Affiliate Monitoring
+
+Validate affiliate links automatically
+
+📊 State Tracking
+
+Store pipeline state in Supabase
+
+🚨 Alert System
+
+Notify failures and link issues
+
+🚀 CI/CD Automation
+
+GitHub Actions orchestration
+
+🌐 Landing Hub
+
+GitHub Pages / Vercel deployment
+
+📚 Knowledge Base
+
+AI documentation and workflow guidance
 
 🏗️ Architecture
 
@@ -93,60 +109,93 @@ E --> L[Supabase]
 L --> M[Monitoring]
 M --> N[Line Alerts]
 
----
-
 ✅ Feature Matrix
 
-Feature| Status
-AI Video Generation| ✅
-AI Caption Generation| ✅
-Affiliate Validation| ✅
-Supabase Tracking| ✅
-GitHub Actions Automation| ✅
-Alert System| ✅
-Link-in-Bio Landing Page| ✅
-Analytics Dashboard| 🚧
-Content Performance Tracking| 🚧
-Publishing API| 📅 Planned
-Autonomous AI Agent| 📅 Planned
+Feature
 
----
+Status
+
+AI Video Generation
+
+✅
+
+AI Caption Generation
+
+✅
+
+Affiliate Validation
+
+✅
+
+Supabase Tracking
+
+✅
+
+GitHub Actions Automation
+
+✅
+
+Alert System
+
+✅
+
+Link-in-Bio Landing Page
+
+✅
+
+Analytics Dashboard
+
+🚧
+
+Content Performance Tracking
+
+🚧
+
+Publishing API
+
+📅 Planned
+
+Autonomous AI Agent
+
+📅 Planned
 
 🔧 Technology Stack
 
 Automation
 
-- GitHub Actions
+GitHub Actions
 
 Backend
 
-- Python 3.11+
+Python 3.11+
 
 Database
 
-- Supabase PostgreSQL
+Supabase PostgreSQL
 
 AI
 
-- Groq API
-- Meta Llama Models
+Groq API
+
+Meta Llama Models
 
 Notifications
 
-- Line Notify
+Line Notify
 
 Hosting
 
-- GitHub Pages
-- Vercel
+GitHub Pages
+
+Vercel
 
 Security
 
-- GitHub Secrets
-- Environment Variables
-- Secret Scanning
+GitHub Secrets
 
----
+Environment Variables
+
+Secret Scanning
 
 📁 Project Structure
 
@@ -182,24 +231,25 @@ crystalcastle/
 ├── .env.example
 └── README.md
 
----
-
 📋 Requirements
 
 Required
 
-- Python 3.11+
-- GitHub Account
-- Supabase Project
-- Groq API Key
+Python 3.11+
+
+GitHub Account
+
+Supabase Project
+
+Groq API Key
 
 Optional
 
-- Node.js 18+
-- Vercel CLI
-- Self-hosted Runner
+Node.js 18+
 
----
+Vercel CLI
+
+Self-hosted Runner
 
 🚀 Quick Start
 
@@ -242,8 +292,6 @@ Run
 
 python main_script.py
 
----
-
 🟢 Supabase Setup
 
 Install CLI
@@ -266,8 +314,6 @@ Deploy Schema
 
 supabase db push
 
----
-
 🔺 Vercel Deployment
 
 Install
@@ -282,20 +328,23 @@ Deploy
 
 vercel --prod
 
----
-
 🔐 Security
 
 Crystal Castle follows secure-by-default practices.
 
 Security Principles
 
-- No secrets committed to source control
-- Environment validation before execution
-- GitHub Secrets for credentials
-- Least-privilege access
-- Automated dependency scanning
-- Branch protection support
+No secrets committed to source control
+
+Environment validation before execution
+
+GitHub Secrets for credentials
+
+Least-privilege access
+
+Automated dependency scanning
+
+Branch protection support
 
 Reporting Security Issues
 
@@ -303,26 +352,29 @@ Please do not create public issues for sensitive vulnerabilities.
 
 Contact project maintainers privately with:
 
-- Vulnerability description
-- Reproduction steps
-- Impact assessment
+Vulnerability description
 
----
+Reproduction steps
+
+Impact assessment
 
 📈 Monitoring & Observability
 
 Crystal Castle tracks:
 
-- Workflow executions
-- AI generation failures
-- Affiliate link health
-- Notification delivery
-- Publishing success rate
-- Pipeline latency
+Workflow executions
+
+AI generation failures
+
+Affiliate link health
+
+Notification delivery
+
+Publishing success rate
+
+Pipeline latency
 
 All events are persisted in Supabase for auditing and analytics.
-
----
 
 📚 Knowledge Base
 
@@ -339,53 +391,85 @@ Suggested Knowledge Documents
 
 AI
 
-- ai-prompt-engineering.md
-- ai-model-selection.md
-- ai-content-guidelines.md
+ai-prompt-engineering.md
+
+ai-model-selection.md
+
+ai-content-guidelines.md
 
 Platform
 
-- github-actions.md
-- supabase.md
-- vercel.md
-- openai.md
-- stripe.md
+github-actions.md
+
+supabase.md
+
+vercel.md
+
+openai.md
+
+stripe.md
 
 Architecture
 
-- system-overview.md
-- database-design.md
-- deployment-strategy.md
+system-overview.md
+
+database-design.md
+
+deployment-strategy.md
 
 Workflows
 
-- ci-cd.md
-- monitoring.md
-- content-pipeline.md
+ci-cd.md
 
----
+monitoring.md
+
+content-pipeline.md
 
 🤖 GitHub Actions
 
 Current workflows:
 
-Workflow| Purpose
-ci.yml| Testing and validation
-ai_pipeline.yml| Content generation
-monitor.yml| Affiliate monitoring
-docs.yml| Documentation validation
+Workflow
 
----
+Purpose
+
+ci.yml
+
+Testing and validation
+
+ai_pipeline.yml
+
+Content generation
+
+monitor.yml
+
+Affiliate monitoring
+
+docs.yml
+
+Documentation validation
 
 🌿 Branch Strategy
 
-Branch| Purpose
-main| Production
-develop| Integration
-feature/*| New features
-fix/*| Bug fixes
+Branch
 
----
+Purpose
+
+main
+
+Production
+
+develop
+
+Integration
+
+feature/*
+
+New features
+
+fix/*
+
+Bug fixes
 
 🤝 Contributing
 
@@ -393,31 +477,35 @@ Contributions are welcome.
 
 Development Flow
 
-1. Fork repository
-2. Create feature branch
+Fork repository
+
+Create feature branch
 
 git checkout -b feature/my-feature
 
-3. Commit using Conventional Commits
+Commit using Conventional Commits
 
 git commit -m "feat: add monitoring dashboard"
 
-4. Push branch
-5. Open Pull Request
+Push branch
+
+Open Pull Request
 
 Requirements
 
-- Follow coding standards
-- Update documentation
-- Add tests when applicable
-- Pass CI checks
-- Sign commits if required
+Follow coding standards
+
+Update documentation
+
+Add tests when applicable
+
+Pass CI checks
+
+Sign commits if required
 
 Developer Certificate of Origin
 
 By contributing to this project, you agree to the Developer Certificate of Origin (DCO).
-
----
 
 💬 Feedback & Support
 
@@ -427,50 +515,59 @@ Report a Bug
 
 Open a GitHub Issue including:
 
-- Expected behavior
-- Actual behavior
-- Logs
-- Screenshots
+Expected behavior
+
+Actual behavior
+
+Logs
+
+Screenshots
 
 Request a Feature
 
 Include:
 
-- Problem statement
-- Proposed solution
-- Expected benefits
+Problem statement
+
+Proposed solution
+
+Expected benefits
 
 Community Channels
 
-- GitHub Discussions
-- X (Twitter)
-- Threads
+GitHub Discussions
+
+X (Twitter)
+
+Threads
 
 Project feedback is typically reviewed within 48 hours.
-
----
 
 🗺️ Roadmap
 
 Q3 2026
 
-- Analytics Dashboard
-- Publishing Metrics
-- Workflow Insights
+Analytics Dashboard
+
+Publishing Metrics
+
+Workflow Insights
 
 Q4 2026
 
-- Content Recommendation Engine
-- AI A/B Testing
-- Multi-account Publishing
+Content Recommendation Engine
+
+AI A/B Testing
+
+Multi-account Publishing
 
 2027
 
-- Autonomous Content Agent
-- Marketplace Integrations
-- Enterprise Workspace Features
+Autonomous Content Agent
 
----
+Marketplace Integrations
+
+Enterprise Workspace Features
 
 📄 License
 
@@ -478,12 +575,8 @@ MIT License
 
 Copyright (c) 2026 1napz
 
----
-
-<div align="center">Crystal Castle
+Crystal Castle
 
 Where AI transforms commerce into scalable content systems.
 
 Built with automation, AI, and creator-first workflows.
-
-</div>
