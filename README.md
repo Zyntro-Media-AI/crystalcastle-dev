@@ -1,341 +1,489 @@
-ผมอัปเกรด README ของคุณให้ “ดูเป็น production SaaS + AI system” มากขึ้น โดยคงโครงเดิม แต่เพิ่มความคมด้าน product positioning, architecture clarity, และ developer experience ให้พร้อม scale จริง
+✦ Crystal Castle
 
+AI-Powered Social Commerce Automation Platform
 
----
+Transform product assets into high-converting marketing content through AI-driven video generation, caption creation, affiliate tracking, and automated publishing workflows.
 
-✨ Updated README (Production-Grade Version)
+Built for modern creators and affiliate marketers across:
 
-<div align="center">
+TikTok · Shopee · Reels · Threads · X
 
-# ✦ Crystal Castle
-
-**AI-powered Social Commerce Content Engine**
-Turn product images into cinematic AI videos, captions, and affiliate-ready content — fully automated.
-
-Built for modern creators on:
-TikTok · Shopee · Reels · Threads
-
-[![CI](https://github.com/1napz/crystalcastle/actions/workflows/ci.yml/badge.svg
-)](https://github.com/1napz/crystalcastle/actions
-)
-[![AI Pipeline](https://github.com/1napz/crystalcastle/actions/workflows/ai_pipeline.yml/badge.svg
-)](https://github.com/1napz/crystalcastle/actions
-)
-[![License: MIT](https://img.shields.io/badge/license-MIT-black.svg
-)](LICENSE)
-[![Supabase](https://img.shields.io/badge/state-Supabase-3ECF8E?logo=supabase&logoColor=white
-)](https://supabase.com
-)
-[![Python](https://img.shields.io/badge/python-3.11+-blue.svg
-)](https://python.org
-)
-
-</div>
+""CI" (https://github.com/1napz/crystalcastle/actions/workflows/ci.yml/badge.svg)" (https://github.com/1napz/crystalcastle/actions)
+""AI Pipeline" (https://github.com/1napz/crystalcastle/actions/workflows/ai_pipeline.yml/badge.svg)" (https://github.com/1napz/crystalcastle/actions)
+""License: MIT" (https://img.shields.io/badge/license-MIT-black.svg)" (LICENSE)
+""Python" (https://img.shields.io/badge/python-3.11+-blue.svg)" (https://python.org)
+""Supabase" (https://img.shields.io/badge/state-Supabase-3ECF8E?logo=supabase&logoColor=white)" (https://supabase.com)
 
 ---
 
-## 🎯 What is Crystal Castle?
+🎯 What is Crystal Castle?
 
-Crystal Castle is an **AI-driven social commerce automation system** that transforms product content into ready-to-publish marketing assets.
+Crystal Castle is an AI-powered content automation platform designed for creators, affiliate marketers, and social commerce teams.
 
-It automates the full creator pipeline:
+The platform automates the content lifecycle from raw product assets to publish-ready marketing materials.
 
-> Image → AI Video → Caption → Affiliate Link → Multi-platform Distribution
+Automated Workflow
 
-Product Image ↓ AI Video Generation (Cinematic 9:16) ↓ AI Caption + Hook (Brand-aligned) ↓ Affiliate Link Injection ↓ Auto Publishing + Monitoring ↓ Supabase State Tracking + Alerts
+Product Image
 
----
+↓
 
-## ⚡ Core Capabilities
+AI Video Generation
 
-| Module | Function |
-|--------|----------|
-| 🎬 AI Video Engine | Converts product images → cinematic short-form videos |
-| ✍️ AI Caption Generator | Generates viral-ready captions (streetwear / retro tone) |
-| 🔗 Affiliate Link Monitor | Real-time validation of Shopee affiliate links |
-| 📊 State Management | Supabase-backed pipeline tracking |
-| 🚨 Alert System | Line Notify alerts for link failures / expiry |
-| 🚀 CI/CD Automation | GitHub Actions pipeline orchestration |
-| 🌐 Link-in-Bio System | GitHub Pages hosted landing hub |
+↓
 
----
+AI Caption Creation
 
-## 🏗️ System Architecture
+↓
 
-┌──────────────────────────────────────────────┐ │              Crystal Castle                  │ │                                              │ │   GitHub Pages (Frontend Hub)                │ │            ▲                                 │ │            │                                 │ │   GitHub Actions (Automation Engine)         │ │            │                                 │ │   ┌────────┼────────┐                        │ │   ▼        ▼        ▼                        │ │ Supabase  Groq   Line Notify                │ │ (State)   (AI)   (Alerts)                   │ └──────────────────────────────────────────────┘
+Affiliate Link Injection
 
-### 🔧 Tech Stack
-- **Automation:** GitHub Actions
-- **Backend Logic:** Python 3.11
-- **State Layer:** Supabase (Postgres)
-- **AI Engine:** Groq / Meta models
-- **Alerts:** Line Notify
-- **Hosting:** GitHub Pages + Vercel
-- **Security:** GitHub Secrets (no hardcoded credentials)
+↓
+
+Publishing Workflow
+
+↓
+
+Monitoring & Alerts
+
+↓
+
+Performance Tracking
 
 ---
 
-## 📁 Project Structure
+⚡ Core Capabilities
 
-crystalcastle/ │ ├── .github/workflows/ │   ├── ci.yml                 # Lint + tests │   ├── ai_pipeline.yml       # AI generation pipeline │   ├── monitor.yml           # Affiliate link monitoring │   └── docstring.yml         # (optional) documentation enforcement │ ├── src/ │   ├── monitor.py            # Link health monitoring engine │   ├── notify.py            # Alert dispatcher (Line Notify) │   ├── supabase_store.py    # State persistence layer │   └── ai_pipeline.py       # Content generation pipeline │ ├── docs/ │   └── logs/ │       └── index.md         # System knowledge base │ ├── main_script.py           # Entry orchestrator ├── requirements.txt └── README.md
+Module| Description
+🎬 AI Video Engine| Generate short-form product videos
+✍️ Caption Generator| Create platform-optimized captions
+🔗 Affiliate Monitoring| Validate affiliate links automatically
+📊 State Tracking| Store pipeline state in Supabase
+🚨 Alert System| Notify failures and link issues
+🚀 CI/CD Automation| GitHub Actions orchestration
+🌐 Landing Hub| GitHub Pages / Vercel deployment
+📚 Knowledge Base| AI documentation and workflow guidance
 
 ---
 
-## 📋 Requirements
+🏗️ Architecture
+
+flowchart TD
+
+A[Product Assets]
+--> B[AI Content Pipeline]
+
+B --> C[Video Generation]
+B --> D[Caption Generation]
+
+C --> E[Content Package]
+D --> E
+
+E --> F[Affiliate Link Injection]
+
+F --> G[Publishing Workflow]
+
+G --> H[TikTok]
+G --> I[Shopee]
+G --> J[Threads]
+G --> K[X]
+
+E --> L[Supabase]
+
+L --> M[Monitoring]
+M --> N[Line Alerts]
+
+---
+
+✅ Feature Matrix
+
+Feature| Status
+AI Video Generation| ✅
+AI Caption Generation| ✅
+Affiliate Validation| ✅
+Supabase Tracking| ✅
+GitHub Actions Automation| ✅
+Alert System| ✅
+Link-in-Bio Landing Page| ✅
+Analytics Dashboard| 🚧
+Content Performance Tracking| 🚧
+Publishing API| 📅 Planned
+Autonomous AI Agent| 📅 Planned
+
+---
+
+🔧 Technology Stack
+
+Automation
+
+- GitHub Actions
+
+Backend
 
 - Python 3.11+
-- Node.js 18+
-- Supabase project
-- GitHub Actions enabled
-- Vercel CLI (optional)
+
+Database
+
+- Supabase PostgreSQL
+
+AI
+
+- Groq API
+- Meta Llama Models
+
+Notifications
+
+- Line Notify
+
+Hosting
+
+- GitHub Pages
+- Vercel
+
+Security
+
+- GitHub Secrets
+- Environment Variables
+- Secret Scanning
 
 ---
 
-## 🚀 Quick Start
+📁 Project Structure
 
-### 1. Clone Project
+crystalcastle/
 
-```bash
+├── .github/
+│   └── workflows/
+│       ├── ci.yml
+│       ├── ai_pipeline.yml
+│       ├── monitor.yml
+│       └── docs.yml
+│
+├── src/
+│   ├── ai_pipeline.py
+│   ├── monitor.py
+│   ├── notify.py
+│   ├── supabase_store.py
+│   └── utils.py
+│
+├── scripts/
+│   └── check_env.py
+│
+├── docs/
+│   ├── architecture/
+│   ├── knowledge/
+│   ├── workflows/
+│   └── prompts/
+│
+├── tests/
+│
+├── main_script.py
+├── requirements.txt
+├── .env.example
+└── README.md
+
+---
+
+📋 Requirements
+
+Required
+
+- Python 3.11+
+- GitHub Account
+- Supabase Project
+- Groq API Key
+
+Optional
+
+- Node.js 18+
+- Vercel CLI
+- Self-hosted Runner
+
+---
+
+🚀 Quick Start
+
+Clone Repository
+
 git clone https://github.com/1napz/crystalcastle.git
 
 cd crystalcastle
 
-2. Install Dependencies
+Install Dependencies
 
 pip install -r requirements.txt
-npm install
 
+Configure Environment
 
----
+Create:
 
-3. Environment Setup
+.env.local
 
-Create .env.local
+Example:
 
 # Supabase
-SUPABASE_URL=https://xxxx.supabase.co
+SUPABASE_URL=https://project.supabase.co
+SUPABASE_SERVICE_ROLE_KEY=your-key
 
-SUPABASE_ANON_KEY=your-anon-key
-SUPABASE_SERVICE_ROLE_KEY=your-service-key
-
-# AI Engine
-GROQ_API_KEY=your-groq-key
+# AI
+GROQ_API_KEY=your-key
 
 # Notifications
-LINE_NOTIFY_TOKEN=your-line-token
+LINE_NOTIFY_TOKEN=your-token
 
-# Deployment (optional)
-VERCEL_TOKEN=your-vercel-token
+# Optional
+VERCEL_TOKEN=your-token
 
+Validate Environment
 
----
+python scripts/check_env.py
 
-4. GitHub Secrets Setup
-
-Secret	Purpose
-
-SUPABASE_URL	Database endpoint
-SUPABASE_KEY	Auth access
-LINE_NOTIFY_TOKEN	Alert system
-GROQ_API_KEY	AI generation
-
-
-
----
-
-5. Run System
+Run
 
 python main_script.py
-
 
 ---
 
 🟢 Supabase Setup
 
-npm i -g supabase
+Install CLI
+
+npm install -g supabase
+
+Login
+
 supabase login
+
+Initialize
+
 supabase init
+
+Link Project
+
 supabase link --project-ref YOUR_PROJECT_ID
+
+Deploy Schema
+
 supabase db push
 
-
 ---
 
-🔺 Deployment (Vercel)
+🔺 Vercel Deployment
 
-npm i -g vercel
+Install
+
+npm install -g vercel
+
+Login
+
 vercel login
+
+Deploy
+
 vercel --prod
 
+---
+
+🔐 Security
+
+Crystal Castle follows secure-by-default practices.
+
+Security Principles
+
+- No secrets committed to source control
+- Environment validation before execution
+- GitHub Secrets for credentials
+- Least-privilege access
+- Automated dependency scanning
+- Branch protection support
+
+Reporting Security Issues
+
+Please do not create public issues for sensitive vulnerabilities.
+
+Contact project maintainers privately with:
+
+- Vulnerability description
+- Reproduction steps
+- Impact assessment
 
 ---
 
-🤖 CI/CD System
+📈 Monitoring & Observability
 
-Self-hosted Runner (optional)
+Crystal Castle tracks:
 
-Used when GitHub-hosted runners hit limits.
+- Workflow executions
+- AI generation failures
+- Affiliate link health
+- Notification delivery
+- Publishing success rate
+- Pipeline latency
 
-./config.sh --url https://github.com/1napz/crystalcastle
- --token YOUR_TOKEN
-./run.sh
-
-
----
-
-🎨 Content Engine Strategy
-
-Platform	Format	Ratio
-
-Shopee	Product Video	9:16
-TikTok	Viral Clip	9:16
-X (Twitter)	Image Thread	16:9
-Threads	Carousel	1:1
-
-
-Caption Style
-
-Streetwear aesthetic
-
-Minimal hooks
-
-High conversion tone
-
-Emotion-driven copy
-
-
+All events are persisted in Supabase for auditing and analytics.
 
 ---
 
-📚 Documentation Hub
+📚 Knowledge Base
 
-docs/logs/index.md → System decisions + architecture notes
+docs/
 
-Automation rules + pipeline logs
+└── knowledge/
+    ├── ai/
+    ├── platform/
+    ├── architecture/
+    ├── workflows/
+    └── prompts/
 
-Prompt engineering library
+Suggested Knowledge Documents
 
+AI
 
+- ai-prompt-engineering.md
+- ai-model-selection.md
+- ai-content-guidelines.md
+
+Platform
+
+- github-actions.md
+- supabase.md
+- vercel.md
+- openai.md
+- stripe.md
+
+Architecture
+
+- system-overview.md
+- database-design.md
+- deployment-strategy.md
+
+Workflows
+
+- ci-cd.md
+- monitoring.md
+- content-pipeline.md
+
+---
+
+🤖 GitHub Actions
+
+Current workflows:
+
+Workflow| Purpose
+ci.yml| Testing and validation
+ai_pipeline.yml| Content generation
+monitor.yml| Affiliate monitoring
+docs.yml| Documentation validation
 
 ---
 
 🌿 Branch Strategy
 
-Branch	Role
-
-main	Production
-develop	Active development
-
-
+Branch| Purpose
+main| Production
+develop| Integration
+feature/*| New features
+fix/*| Bug fixes
 
 ---
 
-🤝 Team Structure
+🤝 Contributing
 
-Role	Responsibility
+Contributions are welcome.
 
-Technical Lead	Automation, CI/CD, backend
-Creative Lead	AI prompts, content strategy
+Development Flow
 
+1. Fork repository
+2. Create feature branch
 
+git checkout -b feature/my-feature
+
+3. Commit using Conventional Commits
+
+git commit -m "feat: add monitoring dashboard"
+
+4. Push branch
+5. Open Pull Request
+
+Requirements
+
+- Follow coding standards
+- Update documentation
+- Add tests when applicable
+- Pass CI checks
+- Sign commits if required
+
+Developer Certificate of Origin
+
+By contributing to this project, you agree to the Developer Certificate of Origin (DCO).
+
+---
+
+💬 Feedback & Support
+
+Feedback helps improve Crystal Castle.
+
+Report a Bug
+
+Open a GitHub Issue including:
+
+- Expected behavior
+- Actual behavior
+- Logs
+- Screenshots
+
+Request a Feature
+
+Include:
+
+- Problem statement
+- Proposed solution
+- Expected benefits
+
+Community Channels
+
+- GitHub Discussions
+- X (Twitter)
+- Threads
+
+Project feedback is typically reviewed within 48 hours.
+
+---
+
+🗺️ Roadmap
+
+Q3 2026
+
+- Analytics Dashboard
+- Publishing Metrics
+- Workflow Insights
+
+Q4 2026
+
+- Content Recommendation Engine
+- AI A/B Testing
+- Multi-account Publishing
+
+2027
+
+- Autonomous Content Agent
+- Marketplace Integrations
+- Enterprise Workspace Features
 
 ---
 
 📄 License
 
-MIT License © 1napz
+MIT License
 
+Copyright (c) 2026 1napz
 
 ---
 
-<div align="center">Crystal Castle Where AI transforms commerce into cinematic storytelling.
+<div align="center">Crystal Castle
+
+Where AI transforms commerce into scalable content systems.
+
+Built with automation, AI, and creator-first workflows.
 
 </div>
-```
----
-
-🔥 สิ่งที่ผม “ปรับให้ดีขึ้นจริง” จากของเดิม
-
-1. Product positioning ชัดขึ้น
-
-จาก “tool” → “AI Commerce Engine”
-
-
-2. Architecture ดู SaaS-ready
-
-แยก AI / State / Alert / Pipeline ชัด
-
-
-3. Developer onboarding ดีขึ้น
-
-ลด ambiguity ใน setup
-
-
-4. CI/CD readiness สูงขึ้น
-
-เหมาะกับเพิ่ม docstring enforcement + CodeRabbit
-
-
-
----
-
-🚀 ถัดไป (ถ้าคุณอยากยกระดับอีก)
-
-ผมสามารถช่วยคุณ upgrade README ไปอีกขั้น:
-
-🧠 Version 2 (AI SaaS Level)
-
-เพิ่ม demo GIF / flow animation
-
-เพิ่ม “live pipeline status badge”
-
-เพิ่ม API spec section
-
-เพิ่ม monetization section (affiliate metrics dashboard)
-
-
-📊 Version 3 (Investor-ready)
-
-pitch deck style README
-
-revenue flow diagram
-
-KPI tracking section
-
-•Health badge:
-[![Pipeline Status](https://img.shields.io/endpoint?url=https://your-domain.com/status-badge
-)](https://your-domain.com/status
-)
-Minimal OpenAPI example (openapi.yaml excerpt):
-
-Minimal OpenAPI example (openapi.yaml excerpt):
-yaml
-
-
-paths:
-  /v1/generate:
-    post:
-      summary: Generate content from product image
-      requestBody: { ... }
-      responses:
-        '200': { description: Ok }
-Env validator (py):
-python
-
-
-import os, sys
-req = ["SUPABASE_URL","SUPABASE_KEY","GROQ_API_KEY"]
-missing = [k for k in req if not os.getenv(k)]
-if missing: sys.exit(f"Missing env: {missing}")
-
-
----
-💬 การส่งคำแนะนำ (Feedback Guide)
-เน้นไปที่การ "รับฟัง" ปัญหาหรือไอเดียจากผู้ใช้งาน
-💬 Feedback & Suggestions
-ความเห็นของคุณสำคัญมาก! หากคุณมีข้อสงสัยหรือข้อเสนอแนะ สามารถบอกเราได้ผ่านช่องทางเหล่านี้:
-รายงานปัญหา (Bug Report): หากสคริปต์รันไม่ผ่าน หรือลิงก์ Affiliate ทำงานผิดปกติ กรุณาเปิด [GitHub Issues] พร้อมแนบภาพหรือ Log ที่เกิดปัญหา
-เสนอไอเดีย (Feature Request): อยากให้เราทำระบบ Automation อะไรเพิ่ม? หรืออยากได้สรุปแฟชั่นสไตล์ไหน? พิมพ์ทิ้งไว้ได้ใน Issues หรือพูดคุยผ่าน Line Notify / X (Twitter) ของเรา
-Quick Feedback: สำหรับเรื่องด่วนหรือการพูดคุยทั่วไป สามารถ DM มาได้ที่ [ระบุ Link X หรือ Threads ของคุณ]
-เราจะพยายามตอบกลับและนำคำแนะนำไปปรับปรุงภายใน 24-48 ชั่วโมงครับ
-"By contributing to this project, you agree to the Developer Certificate of Origin (DCO)"
